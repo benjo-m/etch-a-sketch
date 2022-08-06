@@ -1,6 +1,8 @@
 const changeSizeBtn = document.getElementById("btnChange");
-const defaultSize = 16;
 let colorInput = document.getElementById("coloring");
+let eraser = document.getElementById("eraser");
+const defaultSize = 16;
+
 
 function changeSize() {
     let newSize = document.getElementById("gridSize").value;
@@ -14,15 +16,14 @@ function makeContainer(gridSize) {
     container.style.gridTemplateRows = `repeat(${gridSize}, 1fr)`;
     for (let i = 0; i < gridSize * gridSize; i++) {
         let square = document.createElement("div");
-        square.addEventListener(
-            "mouseover",
-            () => (square.style.backgroundColor = `${colorInput.value}`)
-        );
-        container.append(square);
+        square.addEventListener("mouseover", () => {
+            eraser.checked ? square.style.backgroundColor = "#fff" 
+            : square.style.backgroundColor = `${colorInput.value}`
+        })
+    container.appendChild(square)
     }
 }
 
 makeContainer(defaultSize);
 
 changeSizeBtn.addEventListener("click", changeSize);
-console.log("test");
