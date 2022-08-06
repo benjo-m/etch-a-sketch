@@ -25,3 +25,4 @@ function makeContainer(gridSize) {
 makeContainer(defaultSize);
 
 changeSizeBtn.addEventListener("click", changeSize);
+console.log("test");
