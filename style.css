@@ -4,18 +4,24 @@
 }
 
 body {
-    background-color: #ededed;
+    background-color: #5eb6ff;
     text-align: center;
+}
+
+h1 {
+    color: #fff;
 }
 
 #settings {
     position: fixed;
     text-align: start;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 5px;
     margin-left: 200px;
     padding: 10px;
-    background-color: #e0e0e0;
+    background-color: #2692eb;
+    color: #fff;
+    font-weight: 600;
 }
 
 #container {
