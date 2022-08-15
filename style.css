@@ -28,7 +28,7 @@ h1 {
     display: grid;
     height: 80vh;
     width: 80vh;
-    border: 3px solid rgb(95, 93, 93);
+    border: 3px solid black;
     border-radius: 5px;
     margin: 0 auto;
     grid-column-gap: 0px;
