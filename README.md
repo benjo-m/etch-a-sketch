@@ -1,3 +1,3 @@
 # etch-a-sketch
-Link to GitHub Pages deployment:
-https://benjo-m.github.io/etch-a-sketch/
+This project is a part of The Odin Project course
+Netflify: https://etch-a-sketch-benjo-m.netlify.app/
